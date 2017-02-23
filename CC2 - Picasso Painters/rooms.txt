@@ -6,4 +6,7 @@ dining room,20,20,10
 kitchen,15,15,10
 master bedroom,15,25,8
 guest bedroom,15,15,8
-bathroom,8,10,8 
+bathroom,8,10,8
+
+
+HEY
