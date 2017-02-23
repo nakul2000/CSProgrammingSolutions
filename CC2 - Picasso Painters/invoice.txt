@@ -1,0 +1,16 @@
+PICASSO PAINTERS INVOICE
+------------------------------
+ROOM                      COST
+------------------------------
+living room            $900.00
+dining room            $720.00
+kitchen                $540.00
+master bedroom         $576.00
+guest bedroom          $432.00
+bathroom               $259.20
+------------------------------
+SUBTOTAL             $3,427.20
+------------------------------
+HST                    $445.54
+------------------------------
+TOTAL                $3,872.74
