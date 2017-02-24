@@ -26,7 +26,7 @@ for read in f:
         print(solution)
 
     else:
-        solution = "The quadratic equation with coefficients A =" + str(a) + ", B =" + str(b) + ", C ="+ str(c) + " has no real roots."
+        solution = "The quadratic equation with coefficients A = " + str(a) + ", B = " + str(b) + ", C = "+ str(c) + " has no real roots."
         g.writelines(solution + "\n")
         print(solution)
 
