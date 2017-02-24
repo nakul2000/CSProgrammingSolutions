@@ -27,26 +27,27 @@ for room in roomdict:
     roomcosts[room] = roomcost
     subtotalcost += roomcost
 
-HST = round(0.13 * totalcost, 2)
+HST = round(0.13 * subtotalcost, 2)
 totalcost = round(subtotalcost + HST, 2)
 totalcost = round(totalcost,2)
 
 
-print("PICASSO PAINTERS INVOICE" + "\n" + "ROOM                COST" + "\n" + "-------------------------" + "\n")
+print("PICASSO PAINTERS INVOICE" + "\n" + "ROOM                COST" + "\n" + "---------------------------" + "\n")
 
 
 
 for room in roomcosts:
     length = len(room)
     times = 20- length
-    print(str(room) + (times * " ") + str(roomcosts[room]))
+    print(str(room) + (times * " ") + "$" + str(roomcosts[room]))
 
 lengthsub = 17 - len(str(subtotalcost))
-lengthtotal = 20 - len(str(totalcost))
-lengthHST = 20 - len(str(HST))
+lengthtotal = 15 - len(str(totalcost))
+lengthHST = 22 - len(str(HST))
 
-print("-------------------------" + "\n" + "SUBTOTAL" + (int(lengthsub) * (" ") + str(subtotalcost) + "\n")
-    + "-------------------------" + "\n" + "HST" + (int(lengthHST) * (" ")) + str(HST) + "\n" )
+print("---------------------------" + "\n" + "SUBTOTAL" + (int(lengthsub) * (" ") + "$" + str(subtotalcost) + "\n")
+    + "---------------------------" + "\n" + "HST" + (int(lengthHST) * (" ")) + "$" + str(HST) + "\n"
+    + "---------------------------" + "\n" + "Total Cost" + (int(lengthtotal) * (" ")) + "$" + str(totalcost))
 
 
 #roomvals = roomdict.pop(roomindex)
