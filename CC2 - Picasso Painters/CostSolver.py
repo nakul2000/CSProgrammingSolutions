@@ -1,3 +1,7 @@
+f = open("input.txt")
+print(f.readline())
+g = open("outputme.txt", 'w')
+
 Rooms = int(input())
 Coats = int(input())
 Cost = float(input())

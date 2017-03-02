@@ -13,7 +13,7 @@ for read in f:
     b = int(readarr[1])
     c = int(readarr[2])
     discriminant = (b*b)-(4*a*c)
-    solution = ""
+    print(discriminant)
     if discriminant > 0:
         disc = math.sqrt(discriminant)
         b2 = 0 - b
@@ -23,11 +23,12 @@ for read in f:
         quada = round(quada,2)
         solution = "The quadratic equation with coefficients A = " + str(a) + ", B = " + str(b) + ", C = " + str(c) + " has roots x = " + str(quada) + " and x = " + str(quadb) + " ."
         g.writelines(solution + "\n")
-        print(solution)
 
     else:
         solution = "The quadratic equation with coefficients A = " + str(a) + ", B = " + str(b) + ", C = "+ str(c) + " has no real roots."
         g.writelines(solution + "\n")
-        print(solution)
 
 
+
+f.close()
+g.close()
