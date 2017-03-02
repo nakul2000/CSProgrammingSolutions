@@ -1,3 +1,5 @@
+# Palindrome Checker
+
 inp = input()
 inputlist = list(inp)
 
