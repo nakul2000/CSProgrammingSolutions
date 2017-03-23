@@ -1,0 +1,6 @@
+The quadratic equation with coefficients A = 1, B = 1, C = 2 has no real roots.
+The quadratic equation with coefficients A = -4, B = -4, C = 2 has roots x = -1.37 and x = 0.37 .
+The quadratic equation with coefficients A = 1, B = 14, C = -5 has roots x = 0.35 and x = -14.35 .
+The quadratic equation with coefficients A = 2, B = 30, C = -10 has roots x = 0.33 and x = -15.33 .
+The quadratic equation with coefficients A = -19, B = 132, C = 12 has roots x = -0.09 and x = 7.04 .
+The quadratic equation with coefficients A = 10, B = 10, C = 10 has no real roots.

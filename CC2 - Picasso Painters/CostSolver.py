@@ -1,17 +1,18 @@
-f = open("input.txt")
-print(f.readline())
+f = open("rooms.txt")
 g = open("outputme.txt", 'w')
 
-Rooms = int(input())
-Coats = int(input())
-Cost = float(input())
+Rooms = int(f.readline())
+Coats = int(f.readline())
+Cost = float(f.readline())
+
+
 subtotalcost = 0
 totalcost = 0
 roomdict = {}
 roomcosts = {}
 
 while Rooms > 0:
-    roominfostring = input()
+    roominfostring = f.readline()
     roomlist = roominfostring.split(",")
     roomlist = list(roomlist)
     roomname = roomlist.pop(0)
@@ -36,20 +37,21 @@ totalcost = round(subtotalcost + HST, 2)
 totalcost = round(totalcost,2)
 
 
-print("PICASSO PAINTERS INVOICE" + "\n" + "ROOM                COST" + "\n" + "---------------------------" + "\n")
+
+g.write("PICASSO PAINTERS INVOICE" + "\n" + "---------------------------" + "\n" +"ROOM                  COST" + "\n" + "---------------------------" + "\n")
 
 
 
 for room in roomcosts:
     length = len(room)
-    times = 20- length
-    print(str(room) + (times * " ") + "$" + str(roomcosts[room]))
+    times = 21 - length
+    g.write(str(room) + (times * " ") + "$" + str(roomcosts[room]) + "\n")
 
-lengthsub = 17 - len(str(subtotalcost))
-lengthtotal = 15 - len(str(totalcost))
-lengthHST = 22 - len(str(HST))
+lengthsub = 18 - len(str(subtotalcost))
+lengthtotal = 16 - len(str(totalcost))
+lengthHST = 23 - len(str(HST))
 
-print("---------------------------" + "\n" + "SUBTOTAL" + (int(lengthsub) * (" ") + "$" + str(subtotalcost) + "\n")
+g.writelines("---------------------------" + "\n" + "SUBTOTAL" + (int(lengthsub) * (" ") + "$" + str(subtotalcost) + "\n")
     + "---------------------------" + "\n" + "HST" + (int(lengthHST) * (" ")) + "$" + str(HST) + "\n"
     + "---------------------------" + "\n" + "Total Cost" + (int(lengthtotal) * (" ")) + "$" + str(totalcost))
 
